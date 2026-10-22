@@ -17,3 +17,117 @@
 @media(max-width:600px){.article-brief{font-size:11px}.article-row .article-source{font-size:9px}.info-block .article-row{padding:19px 0}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}.article-row:hover>div,.article-row:hover .row-arrow,.feature:hover img,.feature:hover .feature-arrow,.more:hover span,.back-top:hover{transform:none!important}}
 .info-block .article-row{min-height:146px;padding:20px 0}@media(max-width:600px){.info-block .article-row{min-height:132px;padding:19px 0}}
+
+/* Department visual refresh — white architectural texture and university blue. */
+body{background:#fff;--muted:#7a8693;--line:#e6e8eb}
+.preview-note{display:none}.brand-name{font-size:28px;letter-spacing:3px;padding-top:5px;padding-bottom:5px}.brand-name small,.eyebrow{display:none}
+.hero{width:calc(100% - 64px);max-width:1760px;height:clamp(340px,36vw,610px);margin:22px auto 0;border-radius:24px;isolation:isolate;background:#eee}
+.hero-slides{position:absolute;inset:0}.hero-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 53%;opacity:0;transition:opacity .85s ease}.hero-slide.is-active{opacity:1}
+.hero-prev,.hero-next{position:absolute;top:50%;transform:translateY(-50%);border:1px solid #ffffff60;background:#14355030;backdrop-filter:blur(4px);color:white;width:44px;height:56px;border-radius:22px;font:32px Georgia;transition:background .2s}.hero-prev{left:22px}.hero-next{right:22px}.hero-prev:hover,.hero-next:hover{background:#003d79b3}
+.hero-controls{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:16px;padding:9px 15px;background:#17324d55;border:1px solid #ffffff30;border-radius:24px;backdrop-filter:blur(8px)}.hero-dots{display:flex;gap:9px}.hero-dots button{width:8px;height:8px;padding:0;border:0;border-radius:8px;background:#ffffff80;transition:width .25s,background .25s}.hero-dots button.is-active{background:#fff;width:26px}
+.news-section{position:relative;padding:76px 0 88px}.news-section:before{content:'';position:absolute;inset:0 -5vw;z-index:-1;background:linear-gradient(#fffffff9,#ffffffed),url(campus-garden.jpg) center bottom/cover;pointer-events:none}
+.news-layout{grid-template-columns:1.25fr 1fr;gap:52px;align-items:start}.news-side .section-heading{padding:0 0 22px;border-bottom:1px solid var(--line);margin-bottom:4px;position:relative}.news-side .section-heading:after{content:'';position:absolute;width:130px;height:2px;bottom:-1px;left:0;background:var(--blue)}h2{margin:0;font-size:28px}.gold-dot{display:none}
+.feature{min-width:0;padding-bottom:5px}.feature-photo{height:380px;border-radius:18px;overflow:hidden}.feature-photo img{object-position:center}.feature-info{position:relative;z-index:1;background:white;align-items:flex-start;margin:-44px 24px 0 0;border-radius:0 32px 16px 16px;border-bottom:2px solid var(--blue);padding:30px 24px 28px 25px;gap:20px;box-shadow:0 12px 32px #152c4910;min-height:148px}.feature-info time{background:var(--blue);border:0;color:white;border-radius:8px;min-width:62px;padding:11px 7px;margin-top:-52px;box-shadow:0 5px 14px #003d7920}.feature-info time span{color:#ffffffdc}.feature h3{font-size:17px;margin:0 0 12px}.feature p{font-size:12px;color:#81878f;line-height:1.9}.feature-arrow{margin-left:auto;font-size:18px}.feature:hover .feature-info{background:white}.news-side .article-row:first-child{padding-top:20px}.news-side .article-row{min-height:118px;padding:20px 8px;border-radius:8px}.news-side .article-row h3{font-size:15px}.news-bottom{margin-top:15px;padding:10px 8px}.article-row:hover{background:#f7f7f7}.article-row:focus-visible{background:#f5f5f5}
+.information{background:white;border:0;padding:70px 0 80px;isolation:isolate}.information:before{content:'';position:absolute;inset:0 0 auto;height:290px;background:linear-gradient(110deg,#003566e8,#07548edb),url(campus.jpg) center 55%/cover;z-index:-2}.information:after{content:'';position:absolute;inset:290px 0 0;background:linear-gradient(#ffffffef,#fffffffa),url(campus-library.jpg) center/cover;z-index:-2}
+.info-grid{background:linear-gradient(#fffffffc,#fffffff2),url(campus-garden.jpg) center bottom/cover;border-radius:52px 20px 24px 24px;padding:52px 48px;gap:56px 64px;box-shadow:0 14px 50px #172d420b}.info-block{border-radius:16px;min-width:0}.info-block .section-heading{border-color:var(--line);padding-bottom:23px}.info-block .section-heading:after{width:112px}.info-block h2{font-size:26px}.info-block .article-row{min-height:126px;padding:22px 8px;border-radius:8px}.article-row:before{left:-3px}.article-brief{color:#82878c}.article-row .article-source{color:#8b9197}.article-row:hover:before{background:var(--blue)}
+.inner-hero{width:calc(100% - 64px);margin:22px auto 0;border-radius:20px;background:linear-gradient(90deg,#00366cdb,#003f7866),url(campus.jpg) center 48%/cover}.inner-hero h1{margin:0}.inner-layout{position:relative}.page-content{background:white;border-radius:20px;padding:28px 32px;box-shadow:0 6px 35px #172d4209;border:1px solid #f0f0f0}.inner-layout .column-nav{border-radius:16px;overflow:hidden}.column-nav>a,.pending-box,.reference-callout,.excerpt-note{background:#f7f7f7}.column-nav>a.selected{background:#f0f1f2}.column-nav>a:hover,.reference-callout:hover{background:#ededed}.pending-box,.reference-callout,.excerpt-note,dialog{border-radius:14px}.page-content .article-row{border-radius:10px}.back-top{border-radius:10px}footer{background-image:linear-gradient(90deg,#002b57ed,#003e73e8),url(campus.jpg)}.footer-brand h3{font-size:24px}.friend-links a{border:1px solid #ffffff30;border-radius:8px;padding:12px}.friend-links a:hover{padding-left:16px;background:#ffffff0a}
+@media(min-width:1650px){.hero{height:610px}.feature-photo{height:420px}}
+@media(max-width:1200px){.hero{width:94%}.news-layout{gap:32px}.feature-photo{height:330px}.info-grid{padding:42px 32px;gap:40px}.feature-info{padding:28px 18px}.brand-name{font-size:24px}}
+@media(max-width:900px){.news-layout{grid-template-columns:1fr}.feature-photo{height:auto;aspect-ratio:1.7}.news-section{padding:45px 0 50px}.news-side{margin-top:16px}.info-grid{gap:40px 30px;padding:36px 26px}.hero{height:380px;border-radius:18px}.inner-hero{width:94%}.brand-name{font-size:22px}}
+@media(max-width:600px){.hero{width:94%;height:270px;margin-top:14px;border-radius:16px}.hero-prev,.hero-next{width:32px;height:44px;font-size:26px}.hero-prev{left:10px}.hero-next{right:10px}.hero-controls{bottom:14px;padding:7px 12px}.brand-name{font-size:20px;letter-spacing:1px}.feature-info{margin:-28px 12px 0 0;border-radius:0 24px 14px 14px;padding:26px 16px 22px;gap:14px}.feature-info time{min-width:50px;padding:9px 5px;margin-top:-42px}.feature h3{font-size:15px}.feature-info time b{font-size:28px}.feature-photo{border-radius:14px}.information{padding:35px 0 40px}.info-grid{width:92%;padding:30px 20px;border-radius:30px 16px 20px 20px;gap:36px}.info-block h2{font-size:23px}.info-block .article-row{min-height:122px;padding:20px 0}.article-row{gap:14px}.inner-hero{border-radius:14px}.page-content{padding:24px 18px}.page-content .article-row{padding:20px 0}.footer-brand h3{font-size:21px}.friend-links a{padding:10px}.news-bottom{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.hero-slide{transition:none}}
+
+/* Edge-to-edge campus banner at every viewport size. */
+.hero{width:100%;max-width:none;margin:0;border-radius:0}
+
+/* Spacious footer directory: two columns on desktop, one on small screens. */
+.footer-top{grid-template-columns:minmax(240px,.85fr) minmax(0,1.6fr);gap:64px;padding:56px 0 44px;align-items:start}
+.friend-links>div{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 18px}
+.friend-links a{display:flex;align-items:center;min-height:50px;box-sizing:border-box;padding:13px 18px;font-size:12px;line-height:1.7}
+.friend-links a:hover{padding-left:22px}
+@media(max-width:900px){.footer-top{grid-template-columns:1fr;gap:32px}.friend-links>div{gap:14px 18px}}
+@media(max-width:600px){.footer-top{padding:38px 0 30px;gap:28px}.friend-links>div{grid-template-columns:1fr;gap:10px}.friend-links a{font-size:12px;min-height:46px;padding:12px 16px}}
+
+/* Footer links use the full container width in two rows. */
+.footer-top{grid-template-columns:1fr;gap:30px;padding:44px 0 36px}
+.footer-brand{display:flex;align-items:center;gap:26px}
+.footer-brand h3{margin:0;padding-left:26px;border-left:1px solid #ffffff40}
+.friend-links h3{margin-bottom:18px}
+.friend-links>div{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px 20px}
+.friend-links a{min-height:52px;padding:14px 16px;font-size:12px}
+@media(max-width:1000px){.friend-links>div{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.footer-brand{gap:16px;flex-wrap:wrap}.footer-brand h3{font-size:20px;padding-left:0;border-left:0}.friend-links>div{grid-template-columns:1fr;gap:10px}.friend-links a{min-height:46px}.footer-top{padding:36px 0 28px}}
+
+/* Compact article titles and quiet text-only links. */
+.news-layout>*,.feature-info>div{min-width:0}
+.feature-info>div{flex:1}
+.article-row h3,.info-block .article-row h3,.feature h3{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;-webkit-line-clamp:unset}
+.more{padding:8px 0;flex-shrink:0;transition:color .2s}
+.more:hover{color:var(--blue);text-decoration:underline;text-underline-offset:5px}
+
+/* Child categories refresh the adjacent list without page navigation. */
+.column-nav h2>button{display:block;width:100%;padding:0;border:0;background:none;color:inherit;text-align:left;font:inherit;letter-spacing:inherit}
+.column-nav>button{display:block;width:100%;padding:19px 22px;border:0;border-bottom:1px solid var(--line);background:#f7f7f7;color:var(--ink);font-size:14px;text-align:left;transition:background .2s,color .2s}
+.column-nav>button:hover{background:#ededed;color:var(--blue)}
+.column-nav>button.selected{background:#f0f1f2;box-shadow:inset 3px 0 var(--blue);color:var(--blue);font-weight:600}
+.column-nav button:focus-visible{outline-offset:-4px}
+@media(max-width:700px){.column-nav>button{width:auto;padding:10px 12px;border:1px solid var(--line);border-radius:6px;font-size:12px}.column-nav>button.selected{border-color:var(--blue);box-shadow:none}}
+
+/* Full-width campus texture and two gently differentiated information tiers. */
+.news-background{width:100%;background:linear-gradient(180deg,#fffffff7,#ffffffed),url(campus-garden.jpg) center 60%/cover no-repeat}
+.news-section:before{content:none}
+.info-grid{display:block;padding:0;background:none;border-radius:0;box-shadow:none}
+.info-tier{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:64px;padding:46px 48px}
+.info-tier-primary{background:linear-gradient(#fffffffc,#fffffff0),url(campus-library.jpg) center bottom/cover;border-radius:52px 20px 22px 22px;box-shadow:0 14px 40px #172d4208}
+.info-tier-secondary{margin-top:28px;background:linear-gradient(135deg,#fffffff5,#ffffffb8);border-top:1px solid #e3e6e9;border-radius:20px;padding-top:38px;padding-bottom:42px}
+.information:after{background:linear-gradient(#ffffffed,#fffffff2),url(campus-library.jpg) center/cover no-repeat}
+.info-tier .section-heading{padding-bottom:22px}
+.info-tier .more{padding:4px 12px;border:1px solid #ced9e2;border-radius:20px;font-size:11px;line-height:1.4}
+.info-tier .more:hover{background:var(--blue);border-color:var(--blue);color:white;text-decoration:none}
+.info-tier .article-row time{border-right:1px solid #e5e8eb;padding-right:16px;min-width:70px}
+.info-tier .article-row{gap:18px}
+.info-tier .article-row:before{top:22%;bottom:22%;width:3px}
+@media(hover:hover){.info-tier .article-row:hover{background:#fff;box-shadow:0 5px 22px #172d4209}}
+@media(max-width:1000px){.info-tier{gap:32px;padding:36px 28px}.info-tier .article-row{gap:14px}.info-tier .article-row time{min-width:56px;padding-right:12px}}
+@media(max-width:600px){.info-tier{grid-template-columns:1fr;gap:34px;padding:30px 20px}.info-tier-primary{border-radius:30px 16px 20px 20px}.info-tier-secondary{margin-top:20px;border-radius:16px}.news-background{background-position:center;background-size:auto 100%}}
+@media(min-width:601px) and (max-width:800px){.info-tier{grid-template-columns:1fr;gap:34px}}
+
+/* Article lists show the date and complete title, matching the reference. */
+.article-row h3,.info-block .article-row h3{display:block;white-space:normal;overflow:visible;text-overflow:clip;-webkit-line-clamp:unset;overflow-wrap:anywhere;line-height:1.85}
+.article-row,.info-block .article-row,.news-side .article-row,.page-content .article-row{min-height:104px;padding-top:24px;padding-bottom:24px}
+@media(max-width:600px){.article-row,.info-block .article-row,.news-side .article-row,.page-content .article-row{min-height:92px;padding-top:20px;padding-bottom:20px}}
+
+/* Sunny campus photographs, composed for the panoramic banner. */
+.hero-slide:nth-child(1){object-position:center 48%}
+.hero-slide:nth-child(2){object-position:center 52%}
+.hero-slide:nth-child(3){object-position:center 60%}
+
+/* Typography follows the reference site's hierarchy, with readable small-screen sizes. */
+body{font-family:Arial,Helvetica,"Microsoft YaHei","PingFang SC",sans-serif;font-size:16px}
+h1,h2,h3,.brand-name{letter-spacing:0}
+.section-heading h2,.info-block h2{font-size:clamp(28px,1.875vw,36px);font-weight:600;line-height:1.2}
+.article-row h3,.info-block .article-row h3,.news-side .article-row h3,.page-content .article-row h3{font-size:clamp(16px,.9375vw,18px);font-weight:400;line-height:1.56;color:#323232}
+.article-row:hover h3{color:var(--blue)}
+time b{font-family:"Times New Roman",Times,serif;font-size:32px;font-weight:600;line-height:1.25}
+time span{font-family:"Times New Roman",Times,serif;font-size:14px;font-weight:400;line-height:1.35;color:#929292}
+.feature h3{font-size:18px;font-weight:600;line-height:1.45}.feature p{font-size:14px;line-height:24px}
+.more,.info-tier .more{font-size:14px;line-height:1.4}
+nav>a{font-size:20px;font-weight:600}.brand-name{font-size:28px;font-weight:600}
+.page-list-heading h2{font-size:28px;font-weight:600}.column-nav h2{font-size:24px}.column-nav>button{font-size:18px}
+.breadcrumb,.page-list-heading>span{font-size:14px}.department-copy p,.notice-detail>p{font-size:18px;line-height:2}.notice-detail>h2{font-size:28px;line-height:1.5}
+.footer-brand img{width:259px;height:auto;padding:0;background:transparent;filter:grayscale(1) invert(1) brightness(2);mix-blend-mode:screen;box-sizing:border-box}
+.footer-brand h3{font-size:24px;font-weight:600}.friend-links h3{font-size:18px;font-weight:600}.friend-links a{font-size:14px;line-height:24px}.footer-bottom{font-size:12px;line-height:1.8}
+@media(max-width:1399px){nav>a{font-size:18px}.brand-name{font-size:24px}nav{gap:24px}.brand img{width:200px}}
+@media(max-width:900px){nav>a{font-size:16px}.brand-name{font-size:22px}.brand img{width:165px}.section-heading h2,.info-block h2{font-size:28px}.column-nav h2{font-size:22px}.column-nav>button{font-size:16px}}
+@media(max-width:600px){.brand img{width:135px}.brand-name{font-size:20px}.section-heading h2,.info-block h2{font-size:26px}.feature h3{font-size:16px}.feature p{font-size:13px;line-height:22px}.article-row h3,.info-block .article-row h3,.news-side .article-row h3,.page-content .article-row h3{font-size:16px;line-height:1.65}time b{font-size:30px}time span{font-size:12px}.more,.info-tier .more{font-size:12px}.footer-brand img{width:220px}.footer-brand h3{font-size:22px}.friend-links a{font-size:14px}.department-copy p,.notice-detail>p{font-size:16px}.notice-detail>h2,.page-list-heading h2{font-size:24px}}
+
+/* Quiet navigation feedback with the indicator below the label. */
+nav>a{align-self:center;min-height:54px;padding:12px 4px;line-height:1.5;transition:color .2s ease}
+nav>a:after{left:50%;right:auto;bottom:3px;width:22px;height:2px;border-radius:2px;background:var(--blue);opacity:0;transform:translateX(-50%) scaleX(.35);transform-origin:center;transition:opacity .2s ease,transform .2s ease}
+nav>a:hover,nav>a.active,nav>a:focus-visible{color:var(--blue)}
+nav>a:hover:after,nav>a.active:after,nav>a:focus-visible:after{right:auto;opacity:1;transform:translateX(-50%) scaleX(1)}
+.friend-links a{gap:10px;transition:background-color .2s ease,border-color .2s ease,color .2s ease}
+.friend-links a:hover{padding-left:16px;border-color:#ffffff60;background:#ffffff0d}
+.friend-chevron{flex:0 0 auto;color:#c7d7e8;font:16px Arial,sans-serif;line-height:1}
+@media(max-width:900px){nav>a{min-height:44px;padding:8px 4px}nav>a:after{bottom:0}}
+@media(prefers-reduced-motion:reduce){nav>a,nav>a:after{transition:none}}

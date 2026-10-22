@@ -1,4 +1,4 @@
-// Preserve original sources and summaries; brief is the short display text.
+// Draft notices are local design copy; publication requires editorial confirmation.
 window.siteContent = {
   "news": [
     {
@@ -38,12 +38,22 @@ window.siteContent = {
       "displaySource": "发展规划部"
     },
     {
-      "title": "巡视公告",
+      "title": "关于征集学校高质量发展意见建议的通知",
       "publishDate": "2026-09-11",
-      "url": "https://www.sztu.edu.cn/info/1003/4467.htm",
-      "source": "深圳技术大学",
-      "brief": "公布巡视时间、受理范围及联系方式。",
-      "kind": "通知公告"
+      "url": "notice-suggestions.html",
+      "source": "发展规划部",
+      "brief": "围绕人才培养、学科建设与校园服务征集意见建议。",
+      "kind": "通知公告",
+      "isDraft": true
+    },
+    {
+      "title": "关于开展“十五五”发展规划专题研讨的通知",
+      "publishDate": "2026-10-22",
+      "url": "notice-demo.html",
+      "source": "发展规划部",
+      "brief": "围绕学校发展目标、重点任务与实施路径开展交流。",
+      "kind": "通知公告",
+      "isDraft": true
     }
   ],
   "higher": [
