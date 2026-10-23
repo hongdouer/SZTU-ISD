@@ -98,9 +98,9 @@ body{background:#fff;--muted:#7a8693;--line:#e6e8eb}
 @media(max-width:600px){.article-row,.info-block .article-row,.news-side .article-row,.page-content .article-row{min-height:92px;padding-top:20px;padding-bottom:20px}}
 
 /* Sunny campus photographs, composed for the panoramic banner. */
-.hero-slide:nth-child(1){object-position:center 48%}
-.hero-slide:nth-child(2){object-position:center 52%}
-.hero-slide:nth-child(3){object-position:center 60%}
+.hero-slide:nth-child(1){object-position:center 26%}
+.hero-slide:nth-child(2){object-position:center 60%}
+.hero-slide:nth-child(3){object-position:center 80%}
 
 /* Typography follows the reference site's hierarchy, with readable small-screen sizes. */
 body{font-family:Arial,Helvetica,"Microsoft YaHei","PingFang SC",sans-serif;font-size:16px}
@@ -131,3 +131,55 @@ nav>a:hover:after,nav>a.active:after,nav>a:focus-visible:after{right:auto;opacit
 .friend-chevron{flex:0 0 auto;color:#c7d7e8;font:16px Arial,sans-serif;line-height:1}
 @media(max-width:900px){nav>a{min-height:44px;padding:8px 4px}nav>a:after{bottom:0}}
 @media(prefers-reduced-motion:reduce){nav>a,nav>a:after{transition:none}}
+
+/* Place the supplementary link in the corner without narrowing the title. */
+#news-list{display:grid;grid-template-rows:repeat(3,minmax(min-content,1fr)) auto}
+#news-list>.article-row{padding-top:24px;padding-bottom:24px}
+.article-entry{position:relative}
+.article-entry .article-title:after{content:"";position:absolute;inset:0;border-radius:inherit}
+.article-entry:hover>div{transform:none}
+.article-related{float:right;position:relative;z-index:1;display:inline;margin-left:16px;color:var(--blue);font-size:14px;line-height:inherit;white-space:nowrap;text-decoration:underline;text-underline-offset:4px}
+.article-related:hover{color:var(--deep)}
+@media(max-width:600px){#news-list>.article-row{padding-top:20px;padding-bottom:20px}.article-related{font-size:12px;margin-left:12px}}
+
+
+/* A concise feature summary and a calm department profile. */
+.feature p{display:block;overflow:visible;-webkit-line-clamp:unset}
+.department-page{padding:48px;overflow:hidden}
+.department-profile{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.85fr);gap:56px;align-items:center}
+.department-heading{display:flex;align-items:center;gap:15px;margin-bottom:24px}
+.department-mark{width:5px;height:28px;border-radius:3px;background:var(--blue);flex-shrink:0}
+.department-heading h2{margin:0;font-size:30px;line-height:1.4;color:var(--blue)}
+.department-copy p{margin:0;color:#455365;line-height:2.2;text-align:justify}
+.department-copy strong{font-weight:500;color:var(--blue)}
+.department-photo{align-self:stretch;min-height:300px;border-radius:18px;overflow:hidden}
+.department-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.department-focus{margin-top:40px;padding-top:28px;border-top:1px solid var(--line)}
+.department-focus h3{font-size:16px;line-height:1.5;font-weight:500;color:#728092;margin:0 0 18px}
+.department-focus ul{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;list-style:none;margin:0;padding:0}
+.department-focus li{display:flex;align-items:center;gap:16px;padding:20px 24px;border:1px solid #e6e9ee;border-radius:12px;background:linear-gradient(135deg,#fff,#fafafa);color:var(--blue);font-size:20px}
+.department-focus svg{width:32px;height:32px;fill:none;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+@media(max-width:1100px){.department-page{padding:36px}.department-profile{gap:32px}.department-focus li{padding:18px;font-size:18px;gap:12px}}
+@media(max-width:800px){.department-profile{grid-template-columns:1fr;gap:28px}.department-photo{min-height:0;height:260px}.department-heading h2{font-size:28px}.department-focus ul{gap:12px}.department-focus li{flex-direction:column;padding:18px 8px;gap:10px;font-size:16px}}
+@media(max-width:600px){.department-page{padding:28px 22px}.department-heading{margin-bottom:18px}.department-heading h2{font-size:26px}.department-photo{height:210px;border-radius:14px}.department-copy p{font-size:16px;line-height:2}.department-focus{margin-top:28px;padding-top:22px}.department-focus li{font-size:15px}.department-focus svg{width:28px;height:28px}}
+
+/* Keep the desktop header within narrow tablet viewports. */
+@media(min-width:901px) and (max-width:1100px){.brand img{width:180px}.brand-name{font-size:22px}.brand{gap:16px}.brand-name{padding-left:16px}nav{gap:18px}nav>a{font-size:16px}}
+
+/* Display the supplied footer logo in its original colors and transparency. */
+.footer-brand .footer-logo{display:block;flex:0 0 auto;width:267px;height:auto;padding:0;background:transparent;filter:none;mix-blend-mode:normal}
+@media(max-width:600px){.footer-brand .footer-logo{width:224px}}
+
+/* The archive uses a compact, keyboard-accessible page selector. */
+.list-pagination{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;padding-top:30px;color:#6b7d8e;font-size:14px}
+.list-pagination[hidden]{display:none}
+.pagination-links{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
+.pagination-links a,.pagination-disabled,.pagination-ellipsis{display:inline-flex;align-items:center;justify-content:center;min-width:36px;min-height:36px;padding:6px 10px;border:1px solid #dfe7ef;border-radius:6px;line-height:1.5}
+.pagination-links a{background:#fff;color:var(--blue);transition:background .2s,border-color .2s}
+.pagination-links a:hover{background:#f5f7f9;border-color:var(--blue)}
+.pagination-links a[aria-current="page"]{background:var(--blue);border-color:var(--blue);color:#fff}
+.pagination-disabled{color:#a7b1ba;background:#fafafa}
+.pagination-ellipsis{border-color:transparent;min-width:20px;padding:6px 0}
+.page-list-heading{scroll-margin-top:130px}
+.page-list-heading:focus{outline:none}
+@media(max-width:600px){.list-pagination{justify-content:center;gap:12px;font-size:12px;padding-top:24px}.pagination-summary{width:100%;text-align:center}.pagination-links{justify-content:center;gap:5px}.pagination-links a,.pagination-disabled,.pagination-ellipsis{min-width:30px;min-height:34px;padding:5px 7px}.page-list-heading{scroll-margin-top:100px}}
