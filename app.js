@@ -14,7 +14,7 @@ if(newsList){
  const featuredUrl=featured?.getAttribute('href');
  const featuredTitle=featured?.querySelector('h3')?.textContent.trim();
  const items=siteContent.news.filter(item=>item.url!==featuredUrl&&item.title.trim()!==featuredTitle).slice(0,3);
- newsList.innerHTML=items.map(row).join('')+'<a class="news-bottom" href="https://www.sztu.edu.cn/" target="_blank" rel="noopener">关注学校发展动态 <span>访问学校官网 ↗</span></a>';
+ newsList.innerHTML=items.map(row).join('');
 }
 document.querySelectorAll('[data-list]').forEach(el=>{
  const items=siteContent[el.dataset.list];
